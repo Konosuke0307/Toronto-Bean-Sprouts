@@ -1,0 +1,642 @@
+/* 共通のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* header*/
+
+header {
+    background-color:#1eadddd1;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-logo {
+    width: 100%;
+    height: 100%;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* header*/
+
+/* Overallschreen(Home)*/
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's behind other content */
+    background-image: url('img11.JPG');
+    background-size: cover;
+    background-position: center;
+}
+/* Overallschreen(Home)*/
+
+/* MainScreen(Home)*/
+.main-word {
+    color: #0c49e4da;
+    text-shadow: 0px 2px 4px rgb(250, 246, 8);
+    font-size: 5rem;
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* 画面全体の高さに合わせる */
+}
+
+.main-screen img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50vh; /* 画像の高さを画面の50%に制限 */
+    width: auto; /* 画像のアスペクト比を維持 */
+    border-radius: 30% 70% 70% / 30% 30% 70% 70%;
+}
+/* MainScreen(Home)*/
+
+/* slideshow(Home)*/
+.slideshow-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slideshow img {
+    max-width: 100%;
+    display: block;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slideshow img:hover {
+    opacity: 1;
+}
+
+.slideshow .slide-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+}
+/* slideshow(Home)*/
+
+/* schedule(Home)*/
+.schedule-container{
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.schedule-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#schedule {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.schedule-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    flex: 0 0 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.schedule-item img {
+    max-width: 50px;
+    margin: 10px 0;
+}
+
+.schedule-item p {
+    margin: 5px 0;
+}
+
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+/* schedule(Home)*/
+
+/* Place(Home)*/
+.places {
+    display: flex;
+    justify-content: center;
+
+}
+
+.place-container{
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.place-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.place-card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(100% - 20px);
+    text-align: center;
+}
+
+.place-card iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+/* Place(Home)*/
+
+/*About US*/
+.container {
+    width: 80%;
+    margin: auto;
+    
+}
+
+.team-history,.ask-comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.text {
+    width: 50%;
+}
+
+.ask-comment .photo img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.team-history .photo img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.ask-comment {
+    flex-direction: row-reverse;
+}
+/*About US*/
+
+
+/*member*/
+.team-photo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.team-photo.active {
+    display: block; /* Show the active image */
+}
+
+.member-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-list h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    height: 150px; /* Set a fixed height for uniformity */
+}
+
+.member-card h3 {
+    margin: 10px 0 5px;
+}
+
+.member-card p {
+    margin: 5px 0;
+}
+
+/*member*/
+
+/*contact*/
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #555;
+}
+/*contact*/
+
+/*fillscreen(contact)*/
+.fullscreen-bg2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's behind other content */
+    background-image: url('img16.JPG');
+    background-size: cover;
+    background-position: center;
+}
+/*fillscreen(contact)*/
+
+/*footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.sponsor-info, .team-info {
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.sponsor-logo, .team-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.team-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.team-info li {
+    margin: 5px 0;
+}
+
+.team-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.team-info a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/*footer*/
+
+/*result*/
+.game-info, .highlights, .photo-gallery {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.game-info, .highlights, .photo-gallery {
+    margin-bottom: 20px;
+}
+
+.game-info h1, .highlights h2, .photo-gallery h2 {
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team {
+    text-align: center;
+}
+
+.score {
+    font-size: 2em;
+    color: #007bff;
+}
+
+.highlight {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.highlight h3 {
+    margin: 0 0 10px;
+}
+
+.photo-gallery .photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    max-width: 950px; /* Adjusted to be slightly less than max-width of .photo-gallery to avoid overflow */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.score-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.score-table th, .score-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.score-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/*result*/
+
+/*fillscreen(result)*/
+.fullscreen-bg3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's behind other content */
+    background-image: url('img21.JPG');
+    background-size: cover;
+    background-position: center;
+}
+/*fillscreen(result)*/
+
+/*photo movie*/
+.game-media {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    width: 120px; /* Ensure buttons have the same width */
+    font-size: 16px; /* Ensure font size is consistent */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.game-media {
+    text-align: center;
+}
+
+.game-title, .game-date {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.media-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photos, .videos {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photos img {
+    width: 30%;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.videos video {
+    width: 50%;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*photo movie*/
